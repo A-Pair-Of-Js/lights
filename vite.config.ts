@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />q
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
