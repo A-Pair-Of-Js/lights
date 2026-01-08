@@ -32,11 +32,8 @@ I propose creating the following:-
 3. 2-player version
 
 ## Design
-<!--
-Source - https://stackoverflow.com/a
-Posted by user3638471, modified by community. See post 'Timeline' for change history
-Retrieved 2026-01-08, License - CC BY-SA 4.0
--->
 
 ![figma design](src/assets/design.png)
 
+## Branching Strategy
+Even though I'm doing this single handedly I want to maintain good source control so features will be developed on separate branches and merged in when they have full coverage.
