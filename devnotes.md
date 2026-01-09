@@ -37,3 +37,8 @@ I propose creating the following:-
 
 ## Branching Strategy
 Even though I'm doing this single handedly I want to maintain good source control so features will be developed on separate branches and merged in when they have full coverage.
+
+## Accessibility
+The prototype game would be unplayable for anyone with a red-green colour deficiency. There needs to be an investigation into offering choice(s) so that anyone could enjoy the game. This could be by having different colour schemes or adding shading to help distinguish the different colours.
+from WCAG... "Use information in addition to color, such as shape or text, to convey meaning."
+My first thought would be that the shading would be switched on by default and that players could opt to turn it off.
