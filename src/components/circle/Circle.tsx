@@ -1,5 +1,7 @@
+export type LightColor = "red" | "orange" | "green";
+
 type CircleProps = {
-  lightColor: string;
+  lightColor: LightColor;
 };
 
 export function Circle({ lightColor }: CircleProps) {
@@ -8,5 +10,7 @@ export function Circle({ lightColor }: CircleProps) {
 
 const circleBase: React.CSSProperties = {
   borderRadius: "50%",
+  width: "5rem",
+  height: "5rem",
 };
 
