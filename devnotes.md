@@ -37,3 +37,7 @@ I propose creating the following:-
 
 ## Branching Strategy
 Even though I'm doing this single handedly I want to maintain good source control so features will be developed on separate branches and merged in when they have full coverage.
+
+## Dynamic Favicon
+Individual traffic lights icons were found here...
+<a target="_blank" href="https://icons8.com/icon/zQ1yf8Peqsvz/orange-circle">Orange Circle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
