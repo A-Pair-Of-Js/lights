@@ -6,6 +6,8 @@ I set out to practise after a few months off work. Someone made a super basic su
 
 This was all fun to do and then I felt the need to call that a prototype and to begin again in React in order to work in a test-driven and component-driven way and to make the design of the UI more appealing.
 
+![prototype UI](src/assets/prototype.png)
+
 ## Creating a React App in early 2026
 
 With the deprecation of our old friend 'create react app' in early 2025, research and chatGPT led me to create my Lights app using Node.js, Yarn, Vite, React, and typescript.
