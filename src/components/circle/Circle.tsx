@@ -23,7 +23,7 @@ export function Circle({ lightColor, shading = true }: CircleProps) {
     backgroundStyle = lightColor;
   }
 
-  return <div style={{ ...circleBase, background: backgroundStyle }} />;
+  return <div aria-label = {lightColor} style={{ ...circleBase, background: backgroundStyle }} />;
 }
 
 const circleBase: React.CSSProperties = {
