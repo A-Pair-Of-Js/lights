@@ -8,12 +8,13 @@ const backgroundStyles: Record<LightColour, string> = {
 
 type CircleProps = {
   lightColour: LightColour;
+  testId?: string
 };
 
-export function Circle({ lightColour }: CircleProps) {
+export function Circle({ lightColour, testId }: CircleProps) {
   const backgroundStyle = backgroundStyles[lightColour];
 
-  return <div aria-label={lightColour} style={{ ...circleBase, background: backgroundStyle }} />;
+  return <div aria-label={lightColour} data-testid={testId} style={{ ...circleBase, background: backgroundStyle }} />;
 }
 
 const circleBase: React.CSSProperties = {

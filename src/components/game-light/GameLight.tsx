@@ -2,7 +2,7 @@ import { Circle } from "../circle/Circle"
 import type { LightColour } from "../../types/lightColour";
 import { useEffect, useState } from "react";
 
-function GameLight() {
+export function GameLight() {
      const [colour, setColour] = useState<LightColour>("green");
     
       useEffect(() => {
@@ -17,7 +17,7 @@ function GameLight() {
       }, []);
   return (
     <div>
-        <Circle lightColour={colour} />
+        <Circle testId="game-light" lightColour={colour} />
     </div>
   )
 }
