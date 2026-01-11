@@ -37,3 +37,7 @@ I propose creating the following:-
 
 ## Branching Strategy
 Even though I'm doing this single handedly I want to maintain good source control so features will be developed on separate branches and merged in when they have full coverage.
+
+
+
+https://media.rnib.org.uk/documents/RNIB_Best_Practice_in_Accessible_Gaming.pdf
