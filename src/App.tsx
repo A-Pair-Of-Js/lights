@@ -1,14 +1,27 @@
-import './App.css'
+import { useEffect, useState } from "react";
+import {FaviconColour} from "./components/FaviconColour";
+import type { LightColour } from "./types/lightColour";
 
-function App() {
+
+export default function App() {
+  const [color, setColor] = useState<LightColour>("green");
+
+  useEffect(() => {
+    const order: LightColour[] = ["red", "orange", "green"];
+    let index = 0; 
+
+    const interval = setInterval(() => {
+      setColor(order[index]);        
+      index = (index + 1) % order.length; 
+    }, 5000); 
+    return () => clearInterval(interval); 
+  }, []);
 
   return (
     <>
-      <h1>Lights</h1>
-      <div className="card">
-      </div>
+      <FaviconColour color={color} />
+      <h1>Traffic Light Game</h1>
+      <p>Current color: {color}</p>
     </>
-  )
+  );
 }
-
-export default App
