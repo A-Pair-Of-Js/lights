@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
-export type TrafficLightColor = "red" | "orange" | "green";
+export type LightColor = "red" | "orange" | "green";
 
-interface TrafficFaviconProps {
-  color: TrafficLightColor;
+interface FaviconColourProps {
+  color: LightColor;
 }
 
-export default function TrafficFavicon({ color }: TrafficFaviconProps) {
+export function FaviconColour({ color }: FaviconColourProps) {
   useEffect(() => {
     // Find the old favicon link
     const oldLink = document.getElementById("favicon") as HTMLLinkElement | null;
@@ -22,5 +22,6 @@ export default function TrafficFavicon({ color }: TrafficFaviconProps) {
     oldLink.parentNode?.replaceChild(newLink, oldLink);
   }, [color]); // run every time 'color' changes
 
-  return null; // renders nothing visible
+  return null; 
+  
 }
