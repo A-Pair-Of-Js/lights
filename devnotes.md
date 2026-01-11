@@ -40,6 +40,19 @@ I propose creating the following:-
 ## Branching Strategy
 Even though I'm doing this single handedly I want to maintain good source control so features will be developed on separate branches and merged in when they have full coverage.
 
+## Accessibility
+The prototype game would be unplayable for anyone with a red-green colour deficiency. There needs to be an investigation into offering choice(s) so that anyone could enjoy the game. This could be by having different colour schemes or adding shading to help distinguish the different colours.
+from WCAG... "Use information in addition to color, such as shape or text, to convey meaning."
+My first thought would be that the shading would be switched on by default and that players could opt to turn it off.
+
+After a few days working on this, I now see that I want to make a game that follows the principles of inclusive design. I want to design the game so that by default it will work for the widest range of people. Anyone would then have options to customise the game without labelling or segregating users.
+
+To make an inclusive game, having thought about players with little or no vision, I considered screen readers, initially with aria-labels, for the light colours. Having done a little research, I'm going to try using audio tones instead:-
+red light - low pitch
+orange light - medium pitch
+green light - high pitch
+Once the player has stopped on a light, the screen reader could read out the colour showing and the total score. When a round threshold is reached there will either need to be an announcement while the player is stopped or (a vibration would be good on a hand-held device) another tone. It might be worth disabling the Go button until the round announcement has happened.
+
 ## Dynamic Favicon
 Individual traffic lights icons were found here...
 <a target="_blank" href="https://icons8.com/icon/zQ1yf8Peqsvz/orange-circle">Orange Circle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
