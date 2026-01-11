@@ -22,9 +22,9 @@ export default function App() {
   return (
     <>
       <h1>Lights</h1>
-      <Circle lightColor='red'></Circle>
-      <Circle lightColor='orange'></Circle>
-      <Circle lightColor='green'></Circle>
+      <Circle lightColour='red'></Circle>
+      <Circle lightColour='orange'></Circle>
+      <Circle lightColour='green'></Circle>
       <div className="card">
       </div>
       <FaviconColour color={color} />

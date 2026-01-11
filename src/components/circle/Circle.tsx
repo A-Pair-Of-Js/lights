@@ -1,29 +1,19 @@
-export type LightColor = "red" | "orange" | "green";
+export type LightColour = "red" | "orange" | "green";
 
-type CircleProps = {
-  lightColor: LightColor;
-  shading?: boolean
+const backgroundStyles: Record<LightColour, string> = {
+  red: "repeating-linear-gradient(to right, rgb(255,0,0) 0 8px, rgb(150,0,0) 8px 16px)", // stronger contrast
+  orange: "repeating-linear-gradient(to bottom, rgb(255,140,0) 0 8px, rgb(255,200,0) 8px 16px)", // deeper contrast
+  green: "rgb(0,128,0)", // stays solid
 };
 
-export function Circle({ lightColor, shading = true }: CircleProps) {
-  let backgroundStyle: string;
+type CircleProps = {
+  lightColour: LightColour;
+};
 
-  if (shading && lightColor === "orange") {
-    // vertical stripes
-    backgroundStyle =
-      "repeating-linear-gradient(to bottom, rgb(255,165,0) 0 10px, rgb(255,200,100) 10px 20px)";
-  } else if (shading && lightColor === "red") {
-    // horizontal stripes 
-    backgroundStyle =
-      "repeating-linear-gradient(to right, rgb(255,0,0) 0 10px, rgb(200,0,0) 10px 20px)";
-  } else if (lightColor === "green") {
-    backgroundStyle = "rgb(0,128,0)";
-  } else {
-  
-    backgroundStyle = lightColor;
-  }
+export function Circle({ lightColour }: CircleProps) {
+  const backgroundStyle = backgroundStyles[lightColour];
 
-  return <div aria-label = {lightColor} style={{ ...circleBase, background: backgroundStyle }} />;
+  return <div aria-label={lightColour} style={{ ...circleBase, background: backgroundStyle }} />;
 }
 
 const circleBase: React.CSSProperties = {
