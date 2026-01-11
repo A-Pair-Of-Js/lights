@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-
-export type LightColor = "red" | "orange" | "green";
+import type {LightColour} from "../types/lightColour";
 
 interface FaviconColourProps {
-  color: LightColor;
+  color: LightColour;
 }
 
 export function FaviconColour({ color }: FaviconColourProps) {

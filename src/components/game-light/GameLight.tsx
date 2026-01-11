@@ -18,7 +18,6 @@ function GameLight() {
   return (
     <div>
         <Circle lightColour={colour} />
-      
     </div>
   )
 }
