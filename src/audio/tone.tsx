@@ -1,12 +1,10 @@
-export type LightColor = "red" | "orange" | "green";
+import type { LightColour } from "../types/lightColour";
 
-
-export const colorFrequencies: Record<LightColor, number> = {
+export const colorFrequencies: Record<LightColour, number> = {
   red: 220,    
   orange: 440, 
   green: 880,  
 };
-
 
 export function playTone(
   frequency: number,
